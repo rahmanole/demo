@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: action/checkout@v2
         with:
-        fetch-depth: 0
+          fetch-depth: 0
       - name: Add remote
         env:
           HF: ${{secrets.HF}}
