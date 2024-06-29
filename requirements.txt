@@ -1,0 +1,11 @@
+gradio
+transformers
+tensorflow
+torch
+torchvision
+pylint
+pytest
+pytest-cov
+black
+ipykernel
+ipython
