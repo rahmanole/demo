@@ -11,7 +11,7 @@ jobs:
   sync-to-hub:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v2
+      - uses: action/checkout@v3
         with:
           fetch-depth: 0
       - name: Push to hub
