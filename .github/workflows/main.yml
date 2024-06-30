@@ -22,4 +22,3 @@ jobs:
         env: 
           HF: ${{secrets.HF}}
         run: git push --force https://rahmanole:$HF@huggingface.co/spaces/rahmanole/demo main
-         
