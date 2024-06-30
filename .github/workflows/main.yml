@@ -14,11 +14,7 @@ jobs:
       - uses: action/checkout@v2
         with:
           fetch-depth: 0
-      - name: Add remote
-        env:
-          HF: ${{secrets.HF}}
-        run: git remote add space https://rahmanole:$HF@huggingface.co/spaces/rahmanole/demo
       - name: Push to hub
         env: 
-          HF: ${{secrets.HF}}
-        run: git push --force https://rahmanole:$HF@huggingface.co/spaces/rahmanole/demo main
+          HF_TOKEN: ${{secrets.HF}}
+        run: git push --force https://rahmanole:$HF_TOKEN@huggingface.co/spaces/rahmanole/demo main
